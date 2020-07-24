@@ -15,6 +15,8 @@ import org.springframework.util.Assert;
 import java.math.BigDecimal;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.BinaryOperator;
+import java.util.function.Function;
 
 /**
  * 注意： 假设sku数据很多, 无法将sku列表完全加载到内存中
@@ -76,9 +78,19 @@ class Interview2Tests {
     private String findMiddlestSkuPrice(List<SkuDO> skuDOList) {
 
         //所有sku价格的平均值，作为中间值
-        BigDecimal average = skuDOList.stream().map(SkuDO::getPrice).reduce(BigDecimal.ZERO, BigDecimal::add).divide(BigDecimal.valueOf(skuDOList.size())).setScale(2, BigDecimal.ROUND_HALF_UP);
+        Function<SkuDO,BigDecimal> function = skuDO -> skuDO.getPrice();
+        BinaryOperator<BigDecimal> binaryOperator = (bigDecimal, bigDecimal2) -> bigDecimal.add(bigDecimal2);
+        BigDecimal average = skuDOList.stream().map(function).reduce(BigDecimal.ZERO, binaryOperator).divide(BigDecimal.valueOf(skuDOList.size())).setScale(2, BigDecimal.ROUND_HALF_UP);
+
         //对Sku按价格升序排序
-        skuDOList.sort(Comparator.comparing(SkuDO::getPrice));
+        //下面一行代码经过两次lambda转换就是下下面注释掉的Comparator.comparing 写法
+        skuDOList.sort(new Comparator<SkuDO>() {
+            @Override
+            public int compare(SkuDO o1, SkuDO o2) {
+                return o1.getPrice().compareTo(o2.getPrice());
+            }
+        });
+//        skuDOList.sort(Comparator.comparing(SkuDO::getPrice));
         int index = skuDOList.size() / 2;
         int jndex = skuDOList.size() / 2 + 1;
         //遍历所有sku的价格，key=skuId， value= abs(price-avg)
