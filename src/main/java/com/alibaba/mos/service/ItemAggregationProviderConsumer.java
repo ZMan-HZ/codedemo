@@ -36,11 +36,11 @@ public class ItemAggregationProviderConsumer implements ProviderConsumer<List<It
         Map<String, List<SkuDO>> collections = skuDOList.stream().collect(Collectors.groupingBy(SkuDO::getSkuType));
         List<ItemDO> items = new ArrayList<>();
         for (Map.Entry<String, List<SkuDO>> entry : collections.entrySet()) {
-            if ("ORIGIN".equals(entry.getKey())) {
+//            if ("ORIGIN".equals(entry.getKey())) {
+//                buildItemDo(entry.getKey(), items, entry);
+//            } else {
                 buildItemDo(entry.getKey(), items, entry);
-            } else {
-                buildItemDo(entry.getKey(), items, entry);
-            }
+//            }
         }
         handler.handleResult(items);
     }
