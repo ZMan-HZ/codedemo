@@ -8,11 +8,11 @@
         <version>2.2.0.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.alibaba.mos</groupId>
-    <artifactId>interview</artifactId>
+    <groupId>com.zzm.demos</groupId>
+    <artifactId>demos</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>interview</name>
-    <description>面试题</description>
+    <name>codedemo</name>
+    <description>demo</description>
 
     <properties>
         <java.version>1.8</java.version>

@@ -2,9 +2,9 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package com.alibaba.mos.api;
+package com.zzm.demos.api;
 
-import com.alibaba.mos.data.SkuDO;
+import com.zzm.demos.data.SkuDO;
 
 /**
  * @author superchao

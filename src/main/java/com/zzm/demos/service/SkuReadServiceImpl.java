@@ -2,28 +2,18 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package com.alibaba.mos.service;
+package com.zzm.demos.service;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.alibaba.mos.api.SkuReadService;
-import com.alibaba.mos.data.ChannelInventoryDO;
-import com.alibaba.mos.data.SkuDO;
-import com.alibaba.mos.util.ExcelUtils;
-import jxl.WorkbookSettings;
+import com.zzm.demos.api.SkuReadService;
+import com.zzm.demos.data.ChannelInventoryDO;
+import com.zzm.demos.data.SkuDO;
+import com.zzm.demos.util.ExcelUtils;
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.openxml4j.opc.OPCPackage;
-import org.apache.poi.poifs.filesystem.POIFSFileSystem;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
-import org.apache.poi.xssf.streaming.SXSSFCell;
-import org.apache.poi.xssf.streaming.SXSSFRow;
-import org.apache.poi.xssf.streaming.SXSSFSheet;
-import org.apache.poi.xssf.streaming.SXSSFWorkbook;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
 

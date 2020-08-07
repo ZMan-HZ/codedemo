@@ -1,4 +1,4 @@
-package com.alibaba.mos.interview;
+package com.zzm.demos.interview;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

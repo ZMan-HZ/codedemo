@@ -1,11 +1,11 @@
-package com.alibaba.mos.interview;
+package com.zzm.demos.interview;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.mos.api.ProviderConsumer;
-import com.alibaba.mos.api.SkuReadService;
-import com.alibaba.mos.data.ChannelInventoryDO;
-import com.alibaba.mos.data.ItemDO;
-import com.alibaba.mos.data.SkuDO;
+import com.zzm.demos.api.ProviderConsumer;
+import com.zzm.demos.api.SkuReadService;
+import com.zzm.demos.data.ChannelInventoryDO;
+import com.zzm.demos.data.ItemDO;
+import com.zzm.demos.data.SkuDO;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

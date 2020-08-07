@@ -2,14 +2,13 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package com.alibaba.mos.service;
+package com.zzm.demos.service;
 
-import com.alibaba.fastjson.JSONObject;
-import com.alibaba.mos.api.ProviderConsumer;
-import com.alibaba.mos.api.SkuReadService;
-import com.alibaba.mos.data.ChannelInventoryDO;
-import com.alibaba.mos.data.ItemDO;
-import com.alibaba.mos.data.SkuDO;
+import com.zzm.demos.api.ProviderConsumer;
+import com.zzm.demos.api.SkuReadService;
+import com.zzm.demos.data.ChannelInventoryDO;
+import com.zzm.demos.data.ItemDO;
+import com.zzm.demos.data.SkuDO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
