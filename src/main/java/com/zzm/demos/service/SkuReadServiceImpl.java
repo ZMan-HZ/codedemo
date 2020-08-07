@@ -24,9 +24,6 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * TODO: 实现
- *
- * @author superchao
  * @version $Id: SkuReadServiceImpl.java, v 0.1 2019年10月28日 10:49 AM superchao Exp $
  */
 @Service

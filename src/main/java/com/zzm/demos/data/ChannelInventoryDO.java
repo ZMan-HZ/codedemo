@@ -10,7 +10,6 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
- * @author superchao
  * @version $Id: ChannelInventoryDO.java, v 0.1 2019年10月28日 10:42 AM superchao Exp $
  */
 @Data

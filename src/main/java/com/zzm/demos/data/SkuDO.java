@@ -11,7 +11,6 @@ import java.math.BigDecimal;
 import java.util.List;
 
 /**
- * @author superchao
  * @version $Id: SkuEntity.java, v 0.1 2019年10月28日 10:36 AM superchao Exp $
  */
 @Data

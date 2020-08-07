@@ -11,7 +11,6 @@ import java.math.BigDecimal;
 import java.util.List;
 
 /**
- * @author superchao
  * @version $Id: ItemDO.java, v 0.1 2019年10月28日 11:02 AM superchao Exp $
  */
 @Data

@@ -17,7 +17,6 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * @author superchao
  * @version $Id: ItemAggregationProviderConsumerImpl.java, v 0.1 2019年11月20日 3:06 PM superchao Exp $
  */
 @Service

@@ -7,7 +7,6 @@ package com.zzm.demos.api;
 import com.zzm.demos.data.SkuDO;
 
 /**
- * @author superchao
  * @version $Id: SkuReadService.java, v 0.1 2019年10月28日 10:45 AM superchao Exp $
  */
 public interface SkuReadService {
