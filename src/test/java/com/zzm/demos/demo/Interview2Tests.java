@@ -1,4 +1,4 @@
-package com.zzm.demos.interview;
+package com.zzm.demos.demo;
 
 import com.alibaba.fastjson.JSON;
 import com.zzm.demos.api.ProviderConsumer;
