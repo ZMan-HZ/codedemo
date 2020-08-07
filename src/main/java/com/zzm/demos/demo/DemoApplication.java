@@ -9,10 +9,10 @@ import org.springframework.context.annotation.ImportResource;
  */
 @SpringBootApplication(scanBasePackages = {"com.alibaba.mos"})
 @ImportResource({"classpath*:application-bean.xml"})
-public class InterviewApplication {
+public class DemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(InterviewApplication.class, args);
+        SpringApplication.run(DemoApplication.class, args);
     }
 
 }

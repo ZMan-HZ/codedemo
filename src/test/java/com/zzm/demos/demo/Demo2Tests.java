@@ -23,7 +23,7 @@ import java.util.function.Function;
  */
 @SpringBootTest
 @Slf4j
-class Interview2Tests {
+class Demo2Tests {
 
     @Autowired
     SkuReadService skuReadService;
