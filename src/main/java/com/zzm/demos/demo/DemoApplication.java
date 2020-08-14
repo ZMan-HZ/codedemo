@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ImportResource;
 
 /**
  */
-@SpringBootApplication(scanBasePackages = {"com.alibaba.mos"})
+@SpringBootApplication(scanBasePackages = {"com.zzm.demos"})
 @ImportResource({"classpath*:application-bean.xml"})
 public class DemoApplication {
 
